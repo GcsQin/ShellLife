@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ustb.shellbox.shelllife.inneractivity.ZhiyuanInfoActivity">
+    <TextView
+        style="@style/ActivityTitle"
+        android:text="志愿服务中心"
+        android:id="@+id/tv_zhiyuan_title"
+        />
+    <ImageView
+        android:onClick="joinActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/zhiyuan_img_more"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingBottom="10dp"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <RelativeLayout
+        android:layout_below="@id/tv_zhiyuan_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:id="@+id/relativeLayout">
+        <RelativeLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rl_zhiyuan_accountInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_zhiyuan_rl_bg"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_zhiyuan_name"
+                android:textSize="28sp"
+                android:text="覃福超同学:"
+                />
+            <TextView
+                android:paddingTop="8dp"
+                android:layout_below="@id/tv_zhiyuan_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_zhiyuan_welcome"
+                android:text="欢迎您进入北京科技大学志愿服务中心！"
+                />
+            <TableLayout
+                android:paddingTop="16dp"
+                android:layout_below="@+id/tv_zhiyuan_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="学院:" android:id="@+id/tv_zhiyuan_xueyaun"/>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="数理学院" android:id="@+id/tv_zhiyuan_xy"/>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="班级:" android:id="@+id/tv_zhiyuan_banji" android:paddingLeft="20dp"/>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="计算机1403" android:id="@+id/tv_zhiyuan_bj"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="民族:" android:id="@+id/tv_zhiyuan_minzu"/>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="" android:id="@+id/tv_zhiyuan_mz" android:paddingLeft="5dp"/>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="已获工时:" android:id="@+id/tv_zhiyuan_gongshi" android:paddingLeft="20dp"/>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="23.0" android:id="@+id/tv_zhiyuan_gs" android:paddingLeft="5dp"/>
+                </TableRow>
+                <TableRow>
+
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+        <TextView
+            android:layout_below="@+id/rl_zhiyuan_accountInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已参加活动:"
+            android:paddingBottom="16dp"
+            android:id="@+id/tv_zhiyuan_havejoin"
+            />
+        <ListView
+            android:layout_below="@id/tv_zhiyuan_havejoin"
+            android:id="@+id/lv_zhiyuaninfo_joinActDetials"
+            android:layout_width="match_parent"
+            android:background="@drawable/shape_listview_frame_green"
+            android:layout_height="wrap_content">
+        </ListView>
+    </RelativeLayout>
+</RelativeLayout>

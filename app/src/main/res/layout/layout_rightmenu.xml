@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    >
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--&gt;-->
+        <!--<ImageView-->
+            <!--style="@style/rightMenu_Img"-->
+            <!--android:src="@drawable/rightmenu_tv_night"-->
+            <!--android:id="@+id/img_right_night"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_toRightOf="@id/img_right_night"-->
+           <!--style="@style/rightMenuItem"-->
+            <!--android:text="夜间模式"-->
+            <!--/>-->
+        <!--<ToggleButton-->
+            <!--android:layout_width="32dp"-->
+            <!--android:layout_height="18dp"-->
+            <!--android:checked="false"-->
+            <!--android:background="@drawable/selector_toggle_button"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:layout_marginEnd="16dp" />-->
+    <!--</RelativeLayout>-->
+    <TextView
+        style="@style/rightMenuItem"
+        android:text="清除缓存（all）"
+        android:id="@+id/tv_clearCache"
+        />
+    <TextView
+        style="@style/rightMenuItem"
+        android:text="清除账号密码信息"
+        android:id="@+id/tv_clearAccount"
+        />
+    <!--<TextView-->
+        <!--style="@style/rightMenuItem"-->
+        <!--android:text="密码锁定"-->
+        <!--android:id="@+id/tv_lockAct"-->
+        <!--android:onClick="lockAct"-->
+        <!--/>-->
+    <TextView
+        style="@style/rightMenuItem"
+        android:text="使用指南"
+        android:id="@+id/tv_useTips"
+        />
+    <TextView
+        style="@style/rightMenuItem"
+        android:id="@+id/tv_aboutUs"
+        android:text="关于我们"
+        />
+
+</LinearLayout>

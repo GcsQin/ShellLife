@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- String-array CN-->
+    <string-array name="main_act_gridview_itemname">
+        <item>校内官网</item>
+        <item>网费信息</item>
+        <item>校图书馆</item>
+        <item>新教务系统</item>
+        <item>信息门户</item>
+        <item>志愿服务</item>
+        <item>就业信息</item>
+        <item>更多精彩</item>
+    </string-array>
+    <string-array name="newedusys_act_gridview_itemname">
+        <item>创新学分</item>
+        <item>课程成绩</item>
+        <item>教学计划</item>
+        <item>英语四六级</item>
+    </string-array>
+    <string-array name="eportal_act_spinner_itemname">
+        <item>当月流水</item>
+        <item>当月历史流水</item>
+        <item>上月历史流水</item>
+    </string-array>
+    <string-array name="ustblive_act_gridview_itemname">
+        <item>CCTV1</item>
+        <item>CCTV3</item>
+        <item>CCTV5</item>
+        <item>CCTV5h</item>
+        <item>CCTV6</item>
+        <item>CCTV8</item>
+        <item>CCTV13</item>
+        <item>CHC高清电影</item>
+        <item>北京卫视</item>
+        <item>北京文艺</item>
+        <item>北京体育</item>
+        <item>北京纪实</item>
+        <item>安徽卫视</item>
+        <item>东方卫视</item>
+        <item>广东卫视</item>
+        <item>黑龙江卫视</item>
+        <item>湖北卫视</item>
+        <item>湖南卫视</item>
+        <item>江苏卫视</item>
+        <item>辽宁卫视</item>
+        <item>山东卫视</item>
+        <item>深圳卫视</item>
+        <item>天津卫视</item>
+        <item>浙江卫视</item>
+    </string-array>
+</resources>

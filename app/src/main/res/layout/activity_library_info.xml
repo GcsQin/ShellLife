@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ustb.shellbox.shelllife.inneractivity.LibraryInfoActivity">
+    <TextView
+         style="@style/ActivityTitle"
+        android:text="图书馆个人信息"
+        android:id="@+id/tv_libinfo_title"
+         />
+    <ImageButton
+        android:paddingTop="30dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/show_more_32"
+        android:background="@null"
+        android:onClick="showPopupWindows"
+        android:id="@+id/imgbtn_showmore_lib"
+        />
+    <ListView
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tv_libinfo_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:background="@drawable/shape_listview_frame_green"
+        android:id="@+id/lv_library_info_book"
+        >
+    </ListView>
+    <ListView
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/shape_listview_frame_green"
+        android:layout_below="@+id/lv_library_info_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_library_info"
+        android:divider="@null"
+        >
+    </ListView>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ustb.shellbox.shelllife.iactivity.IOfficialWebListActivity">
+    <TextView
+        style="@style/ActivityTitle"
+        android:text="校内官网"
+        android:id="@+id/tv_owl_title"
+        />
+    <ListView
+        android:paddingTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_owl_official"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:layout_below="@id/tv_owl_title"
+        >
+
+    </ListView>
+
+</RelativeLayout>

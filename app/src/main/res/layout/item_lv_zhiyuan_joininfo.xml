@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"
+        android:text="志愿名"
+        android:id="@+id/tv_zhiyuaninfo_name"
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/tv_zhiyuaninfo_name"
+        android:id="@+id/ll_zhiyuaninfo_time"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/tv_zhiyuaninfo_time"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/ll_zhiyuaninfo_time"
+        android:id="@+id/ll_zhiyuaninfo_deadline"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="报名截止时间:"
+            android:textColor="#131313"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_zhiyuaninfo_deadtime"
+            />
+    </LinearLayout>
+    <TableLayout
+        android:id="@+id/tb_zhiyuan_renshu"
+        android:layout_below="@+id/ll_zhiyuaninfo_deadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="计划人数" android:textColor="#131313"/>
+        <TextView android:paddingLeft="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tv_zhiyuan_planrenshu" android:textColor="#ff2f00"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="参与人数" android:textColor="#131313"/>
+            <TextView android:paddingLeft="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tv_zhiyuan_joinrenshu" android:textColor="#ff2f00"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="活动编号" android:textColor="#131313"/>
+            <TextView android:paddingLeft="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tv_zhiyuan_actnum" android:textColor="#ff2f00"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="活动工时" android:textColor="#131313"/>
+            <TextView android:paddingLeft="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tv_zhiyuan_actgongshi" android:textColor="#ff2f00"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="活动地点" android:textColor="#131313"/>
+            <TextView android:paddingLeft="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tv_zhiyuan_actlocation" android:textColor="#ff2f00"/>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_below="@+id/tb_zhiyuan_renshu"
+        android:id="@+id/ll_zhiyuaninfo_dutyperson"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发起人:"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_zhiyuaninfo_dutyperson"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/ll_zhiyuaninfo_dutyperson"
+        android:id="@+id/ll_zhiyuaninfo_gongshi"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工时信息:"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_zhiyuaninfo_gongshi"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/ll_zhiyuaninfo_gongshi"
+        android:id="@+id/ll_zhiyuaninfo_introduce"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动简介:"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_zhiyuaninfo_introduce"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/ll_zhiyuaninfo_introduce"
+        android:id="@+id/ll_zhiyuaninfo_result"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动:"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_zhiyuaninfo_result"
+            />
+    </LinearLayout>
+</RelativeLayout>

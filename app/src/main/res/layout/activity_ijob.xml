@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RadioGroup
+        android:paddingTop="20dp"
+        android:id="@+id/rg_job_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorActivityTitle"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            style="@style/radioButton_tabs"
+            android:text="招聘会"
+            android:id="@+id/rb_tab1"
+            />
+        <RadioButton
+            style="@style/radioButton_tabs"
+            android:text="单位需求信息"
+            android:id="@+id/rb_tab2"
+            />
+        <RadioButton
+            style="@style/radioButton_tabs"
+            android:text="实习信息"
+            android:id="@+id/rb_tab4"
+            />
+    </RadioGroup>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager_job_tabs"
+        >
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

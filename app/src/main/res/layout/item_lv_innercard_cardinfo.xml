@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_innercard_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017-03-14 17:25:38"
+        android:layout_marginRight="8dp"
+        />
+    <TextView
+        android:id="@+id/tv_innercard_where"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="万秀三层水吧"
+        android:layout_marginRight="8dp"
+        />
+    <TextView
+        android:id="@+id/tv_innercard_consumer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.05"
+        android:layout_marginRight="8dp"
+        />
+    <TextView
+        android:id="@+id/tv_innercard_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="148.90"
+        />
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ustb.shellbox.shelllife.iactivity.ILibraryActivity">
+    <TextView
+        style="@style/ActivityTitle"
+        android:text="图书馆"
+        android:paddingBottom="5dp"
+        />
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="search_libInfo"
+    android:gravity="center_vertical"
+    android:background="@drawable/shape_dash_frame_bule"
+    android:padding="8dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="图书馆个人信息查询"
+        android:textSize="28sp"
+        />
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    <EditText
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:hint="输入要查询的图书名称"
+        android:textColorHint="#d9dcd9"
+        android:id="@+id/et_lib_search"
+        android:background="@drawable/shape_dash_frame_bule"
+        />
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击查询"
+        android:textSize="25sp"
+        android:onClick="search_Book"
+        android:background="@drawable/shape_button_bule"
+        />
+    <com.lhh.ptrrv.library.PullToRefreshRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ptrrv_library_search_result"
+        >
+    </com.lhh.ptrrv.library.PullToRefreshRecyclerView>
+    </LinearLayout>
+</LinearLayout>

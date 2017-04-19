@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageButton
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cancle_32"
+        android:background="@null"
+        android:id="@+id/imgbtn_cancle_right_us"
+        />
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_alignTop="@+id/imgbtn_cancle_right_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tips:"
+        android:textSize="25sp"
+        android:textColor="#71f971"
+        />
+    <LinearLayout
+        android:layout_below="@+id/imgbtn_cancle_right_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_listview_frame_green"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="40dp"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="      PC端作者：AuroraDysis"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="      PC端作者：联系QQ814613512"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="      PC端下载链接：www.ustbbox.com"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="      android端作者：ChumFuchiu"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="      软件反馈QQ群：557093359"
+            />
+    </LinearLayout>
+</RelativeLayout>

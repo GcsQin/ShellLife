@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ustb.shellbox.shelllife"
+    android:versionCode="1"
+    android:versionName="1.0.1">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+
+    <application
+    android:allowBackup="true"
+    android:icon="@drawable/icon64"
+    android:label="@string/app_name"
+    android:supportsRtl="true"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+    <meta-data android:name="UMENG_APPKEY" android:value="58d3084f07fe6541cc001ab0"></meta-data>
+    <meta-data android:name="UMENT_CHANNEL" android:value="${UMENG_CHANNEL_VALUE}"></meta-data>
+    <activity android:name=".activity.SplashActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.BaseSetupWizardActivity" />
+        <activity android:name=".activity.WizardFirstActivity" />
+        <activity android:name=".activity.WizardSecondActivity" />
+        <activity android:name=".activity.WizardThirdActivity" />
+        <activity android:name=".activity.WizardFourthActivity" />
+        <activity android:name=".webactivity.WebIndexActivity" />
+        <activity android:name=".webactivity.WebTeachActivity" />
+        <activity android:name=".webactivity.WebLibraryActivity" />
+        <activity android:name=".webactivity.WebJoinPartyActivity" />
+        <activity android:name=".webactivity.WebQualityDevelopActivity" />
+        <activity android:name=".webactivity.WebCampusOAActivity" />
+        <activity android:name=".iactivity.IOfficialWebListActivity" />
+        <activity android:name=".iactivity.INewEduSysActivity" />
+        <activity android:name=".new_edu_sys.LearnProgressActivity" />
+        <activity android:name=".new_edu_sys.CxxfCreditsActivity" />
+        <activity android:name=".new_edu_sys.CourseScoreActivity" />
+        <activity android:name=".new_edu_sys.TeachPlanActivity" />
+        <activity android:name=".new_edu_sys.CourseListActivity" />
+        <activity android:name=".new_edu_sys.CourseDatesActivity" />
+        <activity android:name=".new_edu_sys.GermanEnglishActivity" />
+        <activity android:name=".new_edu_sys.SearchExamLocationActivity" />
+        <activity android:name=".new_edu_sys.SpecialCourseActivity" />
+        <activity android:name=".new_edu_sys.MustCourseActivity" />
+        <activity android:name=".new_edu_sys.PublicCourseActivity" />
+        <activity android:name=".iactivity.INetPlayActivity" />
+        <activity android:name=".webactivity.WebSchoolNewActivity" />
+        <activity android:name=".alert_act.LinkCampusWebAct" />
+        <activity android:name=".alert_act.LinkEducationSystemAct" />
+        <activity android:name=".webactivity.WebTeachNotifyActivity" />
+        <activity android:name=".iactivity.ICampusWebActivity" />
+        <activity android:name=".iactivity.ILibraryActivity" />
+        <activity android:name=".alert_act.LinkLibraryAct" />
+        <activity android:name=".inneractivity.LibraryInfoActivity" />
+        <activity android:name=".alert_act.LinkEportalAct" />
+        <activity android:name=".inneractivity.EportalActivity" />
+        <activity android:name=".inneractivity.InnerCardInfoActivity" />
+        <activity android:name=".alert_act.LinkVolunteerAct" />
+        <activity android:name=".more_wonderful.USTBliveStreamingActivity" />
+        <activity android:name=".inneractivity.ZhiyuanInfoActivity" />
+        <activity
+            android:name=".alert_act.VitamioLiveActivity"
+            android:configChanges="orientation|screenSize|keyboard|navigation"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".inneractivity.JoinPartyActivity" />
+        <activity android:name=".webactivity.WebJobActivity" />
+        <activity android:name=".iactivity.IJobActivity" />
+        <activity
+            android:name=".webactivity.WebJobDetialsActivity"
+            android:label="@string/title_activity_web_job_detials"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".webactivity.WebLibYuyueActivity"></activity>
+    </application>
+
+</manifest>

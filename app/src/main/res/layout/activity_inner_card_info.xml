@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ustb.shellbox.shelllife.inneractivity.InnerCardInfoActivity">
+    <TextView
+        android:text="流水信息查询"
+        style="@style/ActivityTitle"
+        android:id="@+id/title_eportal_cardinfo"
+        />
+    <ListView
+        android:layout_below="@id/title_eportal_cardinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_innerCIA_waterDetials"
+        >
+    </ListView>
+</RelativeLayout>

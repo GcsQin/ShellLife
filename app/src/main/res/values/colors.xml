@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#95a1f1</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- Custom-->
+    <color name="colorDialogBackGround">#ffffff</color>
+    <color name="colorDialogTitleAndContent">#211f21</color>
+    <color name="colorDialogDividerBlue">#5f97e1</color>
+    <color name="colorDivider">#c2b8b8</color>
+    <color name="colorIcon">#f6f1ef</color>
+    <color name="colorRecycleItemUnPress">#7091c7</color>
+    <color name="colorRecycleItemPress">#bbbebb</color>
+    <color name="colorActivityTitle">#cd1dcbe7</color>
+    <color name="tabschecked">#d74c3f</color>
+    <color name="tabsnochecked">#ffffff</color>
+</resources>

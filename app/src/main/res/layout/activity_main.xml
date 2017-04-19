@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        style="@style/ActivityTitle"
+        android:text="贝壳生活"
+        />
+    <!-- 标题栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_main_title"
+        >
+        <ImageButton
+            android:paddingTop="30dp"
+            android:paddingBottom="15dp"
+            android:onClick="showLeftMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbtn_personal_center"
+            android:src="@drawable/personal_center"
+            android:background="@null"
+            android:paddingLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ImageButton
+            android:paddingTop="30dp"
+            android:paddingBottom="15dp"
+            android:onClick="showRightMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbtn_setting"
+            android:src="@drawable/setting"
+            android:background="@null"
+            android:paddingRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/rl_main_title"
+        app:canLoop="true"
+        android:id="@+id/convenientbanner"
+        >
+    </com.bigkoo.convenientbanner.ConvenientBanner>
+    <!-- content-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/convenientbanner"
+        android:orientation="vertical"
+        >
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4"
+            android:id="@+id/gv_main">
+        </GridView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            >
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="20dp"
+                android:layout_height="1dp"
+                android:background="#ed7b4a"
+                />
+            <TextView
+                android:layout_width="wrap_content" android:textSize="18sp"
+                android:layout_height="wrap_content" android:text="  最新教务通知   " />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ed7b4a"
+                />
+        </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lv_main"
+            >
+        </ListView>
+    </LinearLayout>
+</RelativeLayout>

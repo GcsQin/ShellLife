@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ustb.shellbox.shelllife.inneractivity.JoinPartyActivity">
+    <TextView
+        style="@style/ActivityTitle"
+        android:text="志愿服务中心"
+        android:id="@+id/tv_zhiyuanjoin_title"
+        />
+    <RelativeLayout
+        android:layout_below="@+id/tv_zhiyuanjoin_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        >
+        <RelativeLayout
+            android:background="@drawable/shape_listview_frame_green"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.lhh.ptrrv.library.PullToRefreshRecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ptrrv_joinact_actdetials"
+                >
+            </com.lhh.ptrrv.library.PullToRefreshRecyclerView>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

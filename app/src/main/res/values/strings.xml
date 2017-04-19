@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">贝壳生活</string>
+    <string name="dialog_title_update">版本升级</string>
+    <string name="title_activity_web_job_detials">WebJobDetialsActivity</string>
+    <string name="title_activity_ust_tips">UstTipsActivity</string>
+    <string name="author_copyright_2017">©author copyright 2017</string>
+</resources>
